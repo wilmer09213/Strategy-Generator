@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Friz Quadrata Bold';
+    src: local('Friz Quadrata Bold'),
+    url('./assets/Friz Quadrata Bold.otf') format('otf');
+}
+
+.build {
+    
+
+    font-family: Friz Quadrata Bold;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+
+    grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+
+
+    grid-template-areas:
+        "title title title title title title"
+        "champion champion item item role role"
+        "champion champion item item role role"
+        "summoner summoner mastery mastery playstyle playstyle"
+        "summoner summoner mastery mastery playstyle playstyle"
+        ". . button button . .";
+
+    gap:15px;
+    box-sizing: border-box;
+
+    color:white;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
+
+    justify-items: center;
+    align-items: center;
+
+    background: url(./assets/lol_background.png) no-repeat center fixed;
+    background-size: 100% 100%;
+
+    padding: 10px;
+    border: 1px solid black;
+
+}
+
+#generatebutton {
+    
+    font-family: Friz Quadrata Bold;
+    font-size: 40px;
+
+    grid-area: button;
+
+    display: flex;
+    width: 200px;
+    height: 80px;
+    
+    border-radius: 10px;
+    color: yellow;
+
+    justify-content: center;
+    align-items: center;
+
+    
+
+    background-color: red;
+
+}
+
+#generatebutton:hover {
+    background-color: yellow;
+    color: red;
+}
+
+#title {
+
+    grid-area: title;  
+
+    display: flex;
+
+    width:100%;
+    height: 50%;
+
+    font-size: 50px;
+    color: yellow;
+
+    justify-content: center;
+    align-items: center;
+
+    border: solid black;
+    border-radius: 10px;
+
+    background: url('./assets/wood.jpg');
+}

@@ -1,0 +1,58 @@
+.champion {
+    grid-area: champion;
+
+    width:100%;
+    height: 100%;
+
+    display: grid;
+
+    border: solid black;
+    border-radius: 10px;
+
+    justify-items: center;
+    align-items: center;
+
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+    grid-template-areas: 
+        "championimage championimage"
+        "championname championname"
+    ;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+#championimage {
+    grid-area: championimage;
+
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+
+    margin-top: 10px;
+
+    border: solid black;
+    border-radius: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#championname {
+    grid-area: championname;
+
+    display: flex;
+    width: 90%;
+    height: fit-content;
+
+    font-size: 30px;
+    margin-top: 10px;
+
+    border: solid black;
+    border-radius: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.25);
+}

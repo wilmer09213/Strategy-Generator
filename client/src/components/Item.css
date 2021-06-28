@@ -1,0 +1,62 @@
+.item {
+    grid-area: item;
+
+    width:100%;
+    height: 100%;
+
+    display: grid;
+
+    border: solid black;
+    border-radius: 10px;
+
+    justify-items: center;
+    align-items: center;
+
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+    grid-template-areas: 
+        "itemimage itemimage"
+        "itemname itemname"
+    ;
+
+    background: rgba(0, 0, 0, 0.25);
+}
+
+
+#itemimage {
+    grid-area: itemimage;
+
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+
+    margin-top: 30px;
+
+    border: solid black;
+    border-radius: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#itemname {
+    grid-area: itemname;
+
+    display: flex;
+    width: 90%;
+    height: fit-content;
+
+    font-size: 30px;
+    margin-top: 10px;
+
+    border: solid black;
+    border-radius: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    object-fit: contain;
+
+    background: rgba(0, 0, 0, 0.25);
+}
